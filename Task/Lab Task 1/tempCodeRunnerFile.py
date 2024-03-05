@@ -6,3 +6,4 @@ for string in strings:
         count += 1
 
 print("Result:", count)
+
