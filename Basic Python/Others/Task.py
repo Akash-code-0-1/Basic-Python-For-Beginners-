@@ -1,16 +1,16 @@
-row = 3
-column = 4
-py2Dlist = []
+Student_Result = {
+    "student1": {"Math": 75, "Physics": 83, "English": 76},
+    "student2": {"Math": 81, "Physics": 85, "English": 72},
+    "student3": {"Math": 75, "Physics": 81, "English": 85}
+}
 
-print("Enter values for a", row, "x", column, "matrix:")
+average_marks = []
+for student in Student_Result:
+    total_marks = (sum(Student_Result[student].values()))
+    average_mark_perstudent= total_marks / len(Student_Result[student])
+    
+    
+    average_marks.append(int(average_mark_perstudent))
+    
 
-for i in range(row):
-    inner_list = []
-    for j in range(column):
-        value = int(input(f"Enter value at position ({i+1},{j+1}): "))
-        inner_list.append(value)
-    py2Dlist.append(inner_list)
-
-print("\n2D List:")
-for row in py2Dlist:
-    print(row)
+print("Average-Marks:", average_marks)
