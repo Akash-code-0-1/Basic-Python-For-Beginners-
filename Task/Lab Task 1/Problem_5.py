@@ -10,3 +10,4 @@ for item in items:
     converted_items.append(item.swapcase())
     
 print("Converted items:", converted_items)
+
