@@ -4,4 +4,4 @@ def print_numbers(start, end):
     print(start, end=" ")
     print_numbers(start + 1, end)
 
-print_numbers(1, 5) 
+print_numbers(1, 5)  
